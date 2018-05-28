@@ -71,6 +71,13 @@ static void uci_loop() {
    si.init();
 
    bool init_done = false;
+	
+	var::update();
+	
+	clear_pawn_table();
+	tt::G_TT.set_size(int64(var::Hash) << (20 - 4)); // * 1MiB / 16 bytes
+	
+	init_done = true;
 
    while (true) {
 

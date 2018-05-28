@@ -16,7 +16,7 @@ clean:
 
 # general
 
-CXX      = clang++ # g++ if you must, but beware of NPS!
+CXX      = g++ # g++ if you must, but beware of NPS!
 CXXFLAGS = -pthread
 LDFLAGS  = -pthread
 
@@ -30,7 +30,7 @@ CXXFLAGS += -std=c++11 -fno-rtti
 
 # optimisation
 
-CXXFLAGS += -O3 -mcpu=cortex-a53 -mfloat-abi=hard -mfpu=neon-fp-armv8 -mneon-for-64bits -mtune=cortex-a53 -march=native
+CXXFLAGS += -O3 -mcpu=cortex-a53 -mfloat-abi=hard -mfpu=neon-fp-armv8 -mneon-for-64bits -mtune=cortex-a53
 LDFLAGS  += -O3
 
 CXXFLAGS += -flto
