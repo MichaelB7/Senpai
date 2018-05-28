@@ -30,9 +30,10 @@ CXXFLAGS += -std=c++11 -fno-rtti
 
 # optimisation
 
-#CXXFLAGS += -O3 -mcpu=cortex-a53 -mfloat-abi=hard -mfpu=neon-fp-armv8 -mneon-for-64bits -mtune=cortex-a53 //Pi 3
-#CXXFLAGS +=  -mcpu=cortex-a7 -mfpu=neon-vfpv4 -mneon-for-64bits Pi 2   
-CXXFLAGS += -O3 -mcpu=arm1176jzf-s -mfpu=vfp -march=armv6 //Pi 6
+#CXXFLAGS += -O3 -mcpu=cortex-a53 -mfloat-abi=hard -mfpu=neon-fp-armv8 -mneon-for-64bits -mtune=cortex-a53 ##Pi 3
+#CXXFLAGS +=  -mcpu=cortex-a7 -mfpu=neon-vfpv4 -mneon-for-64bits ## Pi 2
+##Pi 6
+CXXFLAGS += -O3 -mcpu=arm1176jzf-s -mfpu=vfp -march=armv6
 LDFLAGS  += -O3
 
 CXXFLAGS += -flto
